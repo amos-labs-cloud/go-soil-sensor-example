@@ -38,6 +38,6 @@ func main() {
 		log.Fatalf("unable to sense moisture: %s", err)
 	}
 	floatCap := float32(values.Capacitance)
-	log.Printf("temperature: %0.2f°C capacitance : %0.2f%%\n", values.Temperature.Celsius(), floatCap)
+	log.Printf("temperature: %0.2f°C capacitance : %0.2f%\n", values.Temperature.Celsius(), floatCap)
 
 }
