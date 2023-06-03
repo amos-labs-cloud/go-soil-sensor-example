@@ -37,6 +37,7 @@ func main() {
 	if err := dev.Sense(&values); err != nil {
 		log.Fatalf("unable to sense moisture: %s", err)
 	}
-	log.Printf("temperature: %0.2f°C capacitance : %0.2f%%\n", values.Temperature, values.Capacitance)
+	floatCap := float32(values.Capacitance)
+	log.Printf("temperature: %0.2f°C capacitance : %0.2f%%\n", values.Temperature.Celsius(), floatCap)
 
 }
