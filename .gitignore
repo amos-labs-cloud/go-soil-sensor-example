@@ -19,3 +19,6 @@
 
 # Go workspace file
 go.work
+
+.idea/go-soil-sensor-example.iml
+vendor
